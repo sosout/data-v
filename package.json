@@ -1,0 +1,36 @@
+{
+  "name": "data-v",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -w -r 0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sosout/data-v.git"
+  },
+  "author": "Changhua Wei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sosout/data-v/issues"
+  },
+  "homepage": "https://github.com/sosout/data-v#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^1.0.0-rc.13"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
